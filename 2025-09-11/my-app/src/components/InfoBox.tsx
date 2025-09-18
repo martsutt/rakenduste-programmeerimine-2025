@@ -28,7 +28,7 @@ function InfoBox() {
               placeholder="sõnum"
             />
           </div>
-          <button>Saada</button>
+          <button type="button">Saada</button>
         </form>
       </div>
     </>
