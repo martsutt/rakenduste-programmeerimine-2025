@@ -11,7 +11,12 @@ export default function Home() {
     <Container>
       <Box sx={{ p: 8 }}>
         <Stack spacing={5}>
-          <Typography variant="h4">Home</Typography>
+          <Typography
+            variant="h4"
+            color="secondary"
+          >
+            Home
+          </Typography>
           <Typography variant="body1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             commodo sapien non turpis placerat, in porta velit imperdiet.
@@ -30,6 +35,7 @@ export default function Home() {
           <TextField
             label="Home lehe textfield"
             variant="outlined"
+            color="secondary"
           />
           <Button variant="contained">Home lehe nupp</Button>
         </Stack>

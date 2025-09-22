@@ -18,7 +18,12 @@ function InfoBox() {
           justifyContent: "center",
         }}
       >
-        <Typography variant="h5">Martin Sütt</Typography>
+        <Typography
+          variant="h5"
+          color="secondary"
+        >
+          Martin Sütt
+        </Typography>
         <Typography variant="body1">Hobid:</Typography>
         <List>
           <ListItem>Arvutimängud</ListItem>
@@ -37,10 +42,12 @@ function InfoBox() {
           <TextField
             label="E-mail"
             variant="outlined"
+            color="secondary"
           />
           <TextField
             label="Sõnum"
             variant="outlined"
+            color="secondary"
           />
           <Button variant="contained">Saada</Button>
         </Box>

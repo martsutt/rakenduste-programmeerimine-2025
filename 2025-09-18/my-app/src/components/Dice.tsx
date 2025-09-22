@@ -26,7 +26,10 @@ function Dice() {
         >
           Veereta täringut
         </Button>
-        <Typography sx={{ fontWeight: "bold", fontSize: "64px" }}>
+        <Typography
+          sx={{ fontWeight: "bold", fontSize: "64px" }}
+          color="secondary"
+        >
           {dice !== 0 ? dice : ""}
         </Typography>
       </Box>

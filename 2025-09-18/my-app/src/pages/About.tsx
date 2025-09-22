@@ -11,7 +11,12 @@ export default function About() {
     <Container>
       <Box sx={{ p: 8 }}>
         <Stack spacing={5}>
-          <Typography variant="h4">About</Typography>
+          <Typography
+            variant="h4"
+            color="secondary"
+          >
+            About
+          </Typography>
           <Typography variant="body1">
             Cras et mauris tellus. Vivamus commodo sem vel dolor congue aliquet.
             Etiam tempor, tortor sit amet suscipit fermentum, libero mi
@@ -29,6 +34,7 @@ export default function About() {
           <TextField
             label="About lehe textfield"
             variant="outlined"
+            color="secondary"
           />
           <Button variant="contained">About lehe nupp</Button>
         </Stack>
