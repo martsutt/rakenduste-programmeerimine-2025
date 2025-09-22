@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { getItem, setItem, removeItem } from "./localstorage"
+import { getItem, setItem, removeItem } from "./localStorage"
 
 export default function useLocalStorage<T>(key: string, initialValue: T) {
   const [value, setValue] = useState<T>(() => {
