@@ -1,8 +1,8 @@
-import { useState } from "react"
+import useLocalStorage from "../useLocalStorage"
 import { Box, Button, Typography } from "@mui/material"
 
 function Dice() {
-  const [dice, setDice] = useState(0)
+  const [dice, setDice, clearDice] = useLocalStorage<number>("diceValue", 0)
 
   const rollDice = () => {
     setDice(Math.floor(Math.random() * 6) + 1)
@@ -25,6 +25,12 @@ function Dice() {
           onClick={rollDice}
         >
           Veereta täringut
+        </Button>
+        <Button
+          variant="outlined"
+          onClick={clearDice}
+        >
+          Pane täring taskusse
         </Button>
         <Typography
           sx={{ fontWeight: "bold", fontSize: "64px" }}
