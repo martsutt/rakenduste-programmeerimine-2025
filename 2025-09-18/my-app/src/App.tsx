@@ -1,30 +1,41 @@
-import { useState } from "react"
 import "./App.css"
-import Button from "@mui/material/Button"
+import { Button, AppBar, Toolbar, Box } from "@mui/material"
 import { Link, Outlet } from "react-router-dom"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/something">Something</Link>
+      <AppBar position="static">
+        <Toolbar>
+          <Box sx={{ flexGrow: 1 }}>
+            <Button
+              component={Link}
+              to="/"
+              color="inherit"
+            >
+              Home
+            </Button>
+            <Button
+              component={Link}
+              to="/about"
+              color="inherit"
+            >
+              About
+            </Button>
+            <Button
+              component={Link}
+              to="/something"
+              color="inherit"
+            >
+              Something
+            </Button>
+          </Box>
+        </Toolbar>
+      </AppBar>
+
+      <Box sx={{ p: 2 }}>
         <Outlet />
-      </div>
-      <div className="card">
-        <button onClick={() => setCount(count => count + 1)}>
-          count is {count}
-        </button>
-        <Button
-          variant="outlined"
-          onClick={() => setCount(count + 1)}
-        >
-          count is ({count})
-        </Button>
-      </div>
+      </Box>
     </>
   )
 }

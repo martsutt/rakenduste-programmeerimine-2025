@@ -1,11 +1,11 @@
 import { StrictMode } from "react"
-import ReactDOM, { createRoot } from "react-dom/client"
+import ReactDOM from "react-dom/client"
 import { createHashRouter, RouterProvider } from "react-router-dom"
 import "./index.css"
 import App from "./App.tsx"
-import Home from "./components/Home.tsx"
-import About from "./components/About.tsx"
-import Something from "./components/Something.tsx"
+import Home from "./pages/Home.tsx"
+import About from "./pages/About.tsx"
+import Something from "./pages/Something.tsx"
 
 const router = createHashRouter([
   {
